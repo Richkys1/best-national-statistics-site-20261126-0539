@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NusaStat — Portal Statistik Indonesia</title>
+<meta name="description" content="NusaStat menyajikan statistik nasional Indonesia: penduduk, ekonomi, harga, tenaga kerja, dan provinsi — dengan sumber dan tahun pada setiap angka.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#/">
+      <span class="brand-mark" aria-hidden="true">N</span>
+      <span class="brand-text"><strong>NusaStat</strong><small>Portal Statistik Indonesia</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Navigasi utama">
+      <a href="#/" data-nav="overview">Beranda</a>
+      <a href="#/population" data-nav="population">Penduduk</a>
+      <a href="#/economy" data-nav="economy">Ekonomi</a>
+      <a href="#/prices" data-nav="prices">Harga</a>
+      <a href="#/labour" data-nav="labour">Tenaga Kerja</a>
+      <a href="#/regions" data-nav="regions">Provinsi</a>
+      <a href="#/data" data-nav="data">Tabel Data</a>
+      <a href="#/about" data-nav="about">Tentang</a>
+    </nav>
+  </div>
+  <div class="ticker" id="ticker" aria-label="Angka utama terkini"></div>
+</header>
+
+<main class="wrap" id="page" aria-live="polite"></main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p><strong>NusaStat</strong> — portal statistik nasional Indonesia yang dibuat secara independen.
+    Angka-angka di situs ini adalah angka resmi yang diterbitkan dan dibulatkan, masing-masing
+    disertai sumber dan tahun rujukannya.</p>
+    <p class="footer-sources">Sumber utama: Badan Pusat Statistik (BPS) · Bank Indonesia · World Bank.
+    Lihat halaman <a href="#/about">Tentang &amp; Metodologi</a> untuk daftar sumber lengkap.</p>
+    <p class="footer-note">NusaStat bukan situs resmi pemerintah dan tidak berafiliasi dengan BPS.</p>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script src="charts.js"></script>
+<script src="pages.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
